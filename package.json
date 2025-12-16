@@ -4,7 +4,8 @@
   "description": "API Node.js développée en groupe. Projet pédagogique pour apprendre Git, GitHub et CI/CD.",
   "main": "index.js",
   "scripts": {
-    "test": "node server.js"
+    "start": "node server.js",
+    "test": "jest --ci --runInBand"
   },
   "keywords": [],
   "author": "",
