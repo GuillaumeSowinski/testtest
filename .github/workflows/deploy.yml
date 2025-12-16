@@ -1,4 +1,4 @@
-name: CI
+name: CD
 
 on :
     push:
@@ -22,7 +22,7 @@ jobs:
 
     - name: Run tests
       run: npm test
-
+    
     - name : Trigger Render deployment
       env: 
         RENDER_DEPLOY_HOOK_URL : ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
